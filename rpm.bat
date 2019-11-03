@@ -1,10 +1,10 @@
+@echo off
 REM -----
 REM Remote Packages' Manager (v0.3)
 REM Tool to deploy, install, repair or uninstall
 REM products needed on a computer using a 
 REM network repository.
 REM -----
-@echo off
 setlocal enabledelayedexpansion
 
 REM RPM's header

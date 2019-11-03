@@ -56,7 +56,7 @@ if exist "%SCRIPT_PKG_DIR%%Package%\" (
 REM The package is available, so we download it localy
 REM to reference it for further usages ...
 mkdir "%SCRIPT_PKG_DIR%%Package%\"
-robocopy /E %CONF_REPOSITORY%%Package%\%LastVersion%\ %SCRIPT_PKG_DIR%%Package% > %SCRIPT_ROOT_DIR%logs\dl_%Package:/=_%.log
+robocopy /E %CONF_REPOSITORY%%Package%\%LastVersion%\ %SCRIPT_PKG_DIR%%Package% > %SCRIPT_ROOT_DIR%logs\dl_%Package:/=-%.log
 echo %LastVersion% > %SCRIPT_PKG_DIR%%Package%\version.txt
 
 REM STEP 3
